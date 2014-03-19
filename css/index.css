@@ -1,0 +1,204 @@
+/* Layout style */
+
+div.container {
+	min-width: 1140px;
+}
+#content {
+	width: 1100px;
+	margin: 20px auto 0 auto;
+}
+#visContainer {
+	display: inline-block;
+}
+#treeContainer {
+	float: left;
+	width: 300px;
+}
+#chartContainer {
+	float: right;
+	width: 800px;
+}
+#alert-bar {
+	min-height: 55px;
+	margin-bottom: 20px;
+	width: 1100px;
+	position: absolute;
+	z-index: 101;
+	display: none;
+}
+#IEAlert {
+	padding: 5px 20px 5px 45px;
+	border-top: 2px solid #ffd324;
+	border-bottom: 2px solid #ffd324;
+	text-align:center
+}
+#loading {
+	top: 5px;
+	position: absolute;
+	z-index: 100;
+	background-color: white;
+	opacity: .6;
+	display: none;
+}
+
+/* SVG general style */
+
+path {
+	shape-rendering: crispEdges;
+}
+
+line {
+	stroke: lightgray;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
+}
+
+/* Chart */
+
+#chartHeader {
+	width: 800px;
+	display: inline-block;
+	margin-top: 20px;
+}
+#chartHeader .progress {
+	margin: 10px 0 0 0;
+	height: 3px;
+	opacity: 0;
+}
+#chartBody {
+	width: 800px;
+	position: relative;
+}
+#chartBody svg {
+	margin-top: 5px;
+}
+input.date {
+	width: 120px;
+}
+#chartInfo {
+	width: 800px;
+	margin-top: 15px;
+	float: left;
+}
+.btn-toolbar {
+	margin-left: 10px;
+	float: right;
+	display: none;
+}
+#dataTable {
+	width:800px;
+	padding: 5px 0 0 0;
+}
+
+/* Tree */
+
+#treeTitle {
+	margin: 10px 0 0 0;
+}
+.node polygon.arrow {
+	cursor: pointer;
+}
+.node rect {
+	cursor: pointer;
+	fill: #fff;
+	fill-opacity: 0.65;
+	stroke-width: 1;
+}
+.node:hover rect {
+	fill: lightgray;
+}
+.node rect.colorRect {
+	fill-opacity: 1;
+}
+.node text {
+	font: 11px sans-serif;
+	pointer-events: none;
+}
+
+/* Line chart style */
+
+.f-line path {
+	stroke-width: 2;
+	fill: none;
+	shape-rendering: geometricPrecision;
+}
+.f-area path {
+	opacity: 0.5;
+}
+.c-line path {
+	stroke-width: 2;
+	fill: none;
+	shape-rendering: geometricPrecision;
+}
+g.tick text {
+	font-size: 10px;
+}
+g.axis line {
+	stroke: lightgray;
+}
+.brush .extent {
+	stroke: #fff;
+	fill-opacity: .125;
+	shape-rendering: crispEdges;
+}
+.resize {
+	stroke: black;
+}
+
+/* Table style */
+
+#chartInfo * {
+	box-sizing: content-box;
+}
+#data-table {
+	min-height: 250px;
+}
+
+/* Sankey diagram style */
+
+.sNode rect {
+	cursor: move;
+	fill-opacity: .9;
+	shape-rendering: crispEdges;
+	stroke: lightgray;
+}
+.sNode text {
+	pointer-events: none;
+	text-shadow: 0 1px 0 #fff;
+}
+.sLink {
+	fill: none;
+	stroke-opacity: .3;
+	shape-rendering: geometricPrecision;
+}
+.sLink:hover {
+	stroke-opacity: .8;
+}
+g.timestamp text {
+	font-size: 3em;
+}
+
+/* Tree map style */
+
+.grandparent text {
+	font-size: 2em;
+	cursor: pointer
+}
+rect.parent {
+	stroke-width: 2px;
+	stroke: #fff;
+	fill: none;
+}
+.children rect.parent {
+	cursor: pointer;
+}
+rect.parent {
+	pointer-events: all;
+}
+rect.child {
+	stroke: #fff;
+	fill-opacity: 0.8;
+}
+.children:hover rect.child {
+	fill-opacity: 1;
+}
